@@ -5,7 +5,7 @@ export const villas = [
     name: "Taj Hotel",
     location: "Mumbai",
     category: "Mountains",
-    guests: 11,
+    guests: 10,
     bedrooms: 6,
     bathrooms: 10,
     squareMeter: "400",

@@ -6,7 +6,7 @@ const About = () => {
       <section id="aboutUs_Mini">
         <div className="first_container">
           <div className="content">
-          <h1>ABOUT US</h1>
+          <h1>ABOUT us</h1>
           <p>
           Imagine a digital sanctuary where hospitality meets seamless efficiency—a hotel management website crafted to redefine the essence of hospitality. With elegant design and intuitive functionality, this virtual gateway invites guests into a world of unparalleled comfort and convenience. From the moment visitors arrive, they are greeted by a captivating interface that seamlessly guides them through a tailored journey, effortlessly booking their dream accommodations, dining experiences, and personalized services with a few clicks.
           </p>

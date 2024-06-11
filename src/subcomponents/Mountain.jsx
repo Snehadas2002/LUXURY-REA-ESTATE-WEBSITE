@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { villas } from "../../villas";
+import { villas } from "../villas";
+import { Link } from "react-router-dom";
 import { RxDot } from "react-icons/rx";
 import { IoIosPeople } from "react-icons/io";
-import { FaBed } from "react-icons/fa";
+import { FaBath, FaBed } from "react-icons/fa";
 import { BiArea } from "react-icons/bi";
-import { FaBath } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 
-const Villas = () => {
+function mountainregion() {
   const [data, setData] = useState([]);
   useEffect(() => {
     fetchData();
   }, []);
   const fetchData = async () => {
     try {
-      let result = await fetch("http://localhost:8080/villas/allVillas");
+      let result = await fetch(
+        "http://localhost:8080/villas/category/mountains"
+      );
       result = await result.json();
       console.log(result);
       setData(result);
@@ -23,7 +24,6 @@ const Villas = () => {
     }
   };
   console.log(data);
-
   return (
     <>
       <div className="page" id="allVillas">
@@ -78,6 +78,5 @@ const Villas = () => {
       </div>
     </>
   );
-};
-
-export default Villas;
+}
+export default mountainregion;
